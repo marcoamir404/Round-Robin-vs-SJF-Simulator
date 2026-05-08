@@ -43,21 +43,35 @@ The goal of the project is to study the trade-offs between fairness and efficien
   * Eclipse
   * NetBeans
 
+
 ---
 
 ## 🚀 How to Build and Run
 
 ### ▶️ Option 1: Using an IDE
 
-1. Open your IDE (IntelliJ / Eclipse / NetBeans)
-2. Import the project folder
-3. Make sure the JDK is set (Java 8+)
+1. Open your IDE (IntelliJ IDEA / Eclipse / NetBeans)
+
+2. Import or open the project folder
+
+3. Make sure the JDK is configured correctly
+
+ Recommended:
+
+   ```text
+   Java 11+
+
+Minimum supported:
+
+Java 8
+
 4. Locate the main file:
 
-   ```
+   ```text
    src/Main.java
    ```
-5. Run the program
+
+5. Run the program normally from the IDE
 
 ---
 
@@ -82,6 +96,87 @@ The goal of the project is to study the trade-offs between fairness and efficien
    ```
 
 ---
+
+### ▶️ Option 3: Run Using JAR File
+
+A prebuilt executable JAR file is included inside the `files/` directory.
+
+#### Requirements
+
+* Java Runtime Environment (JRE) 8 or higher
+
+#### Run Command
+
+```bash
+java -jar files/CPU-Scheduling-Simulator.jar
+```
+
+You can also launch the application by double-clicking the `.jar` file if Java is installed correctly.
+
+---
+
+### ▶️ Option 4: Run Using Windows Executable (.exe)
+
+Windows users can run the application directly using the executable installer.
+
+#### Steps
+
+1. Open the `files/` directory
+
+2. Locate:
+
+   ```text
+   CPU-Scheduling-Simulator.exe
+   ```
+
+3. Double-click the file
+
+4. Follow the installation steps
+
+5. Launch the application normally
+
+No manual Java setup or compilation is required.
+
+---
+
+### ▶️ Option 5: Run Using Linux Package (.deb)
+
+Supported Linux distributions:
+
+* Ubuntu
+* Debian
+* Linux Mint
+
+#### Installation
+
+Run the following command:
+
+```bash
+sudo dpkg -i files/cpu-scheduling-simulator.deb
+```
+
+If dependency issues occur:
+
+```bash
+sudo apt --fix-broken install
+```
+
+#### Launching the Application
+
+After installation, launch the application from:
+
+* Applications Menu
+
+Or using terminal:
+
+```bash
+cpu-scheduling-simulator
+```
+
+---
+
+```
+```
 
 ## 🖥️ Java Version
 
@@ -167,24 +262,15 @@ The project includes multiple test scenarios:
 
 ## 👥 Team Members
 
-| No. | Name        | ID   | Contribution     |
-| --- | ----------- | ---- | ---------------- |
-| 1   | [Your Name] | [ID] | UI + Integration |
-| 2   | [Member 2]  | [ID] | Algorithms       |
-| 3   | [Member 3]  | [ID] | Metrics          |
-| 4   | [Member 4]  | [ID] | Testing          |
-| 5   | [Member 5]  | [ID] | Documentation    |
-
----
-
-## 📸 Screenshots
-
-(Add screenshots here)
-
-* Input Panel
-* Gantt Charts
-* Metrics View
-* Comparison View
+| No. | Name       | ID   | Contribution Area                                              |
+| --- | ---------- | ---- | -------------------------------------------------------------- |
+| 1   | [Member 1] | [ID] | Main GUI Architecture, Navigation System, Panels Integration   |
+| 2   | [Member 2] | [ID] | Round Robin Scheduler Implementation + Ready Queue Logic       |
+| 3   | [Member 3] | [ID] | SJF and SRTF Algorithms Implementation                         |
+| 4   | [Member 4] | [ID] | Metrics Calculation (WT, TAT, RT) + Comparison Logic           |
+| 5   | [Member 5] | [ID] | Gantt Chart Visualization + Execution Timeline UI              |
+| 6   | [Member 6] | [ID] | Input Validation, Testing Scenarios, Debugging                 |
+| 7   | [Member 7] | [ID] | Documentation, README, Report Writing, Screenshots Preparation |
 
 ---
 
