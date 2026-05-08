@@ -175,9 +175,6 @@ cpu-scheduling-simulator
 
 ---
 
-```
-```
-
 ## 🖥️ Java Version
 
 * Recommended: **Java 11 or higher**
