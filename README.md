@@ -259,15 +259,15 @@ The project includes multiple test scenarios:
 
 ## 👥 Team Members
 
-| No. | Name       | ID   | Contribution Area                                              |
-| --- | ---------- | ---- | -------------------------------------------------------------- |
-| 1   | [Member 1] | [ID] | Main GUI Architecture, Navigation System, Panels Integration   |
-| 2   | [Member 2] | [ID] | Round Robin Scheduler Implementation + Ready Queue Logic       |
-| 3   | [Member 3] | [ID] | SJF and SRTF Algorithms Implementation                         |
-| 4   | [Member 4] | [ID] | Metrics Calculation (WT, TAT, RT) + Comparison Logic           |
-| 5   | [Member 5] | [ID] | Gantt Chart Visualization + Execution Timeline UI              |
-| 6   | [Member 6] | [ID] | Input Validation, Testing Scenarios, Debugging                 |
-| 7   | [Member 7] | [ID] | Documentation, README, Report Writing, Screenshots Preparation |
+| No. | Name                | ID       | Contribution Area                                              |
+| --- | --------------------| -------- | -------------------------------------------------------------- |
+| 1   | Boran Hany          | 20240212 | Process class  and SJF Scheduler Implementation                |
+| 2   | Marco Amir          | 20240754 | Round Robin Scheduler Implementation , Ready Queue Logic       |
+| 3   | Malak Ahmed         | 20240993 | SRTF Algorithms Implementation                                 |
+| 4   | Mena Allah Mohammed | 20241015 | Metrics Calculation (WT, TAT, RT), Metrics Panel               |
+| 5   | Mina Aiad           | 20241042 | Gantt Chart Visualization                                      |
+| 6   | Minas Sayed         | 20241044 | Input Validation, Testing Scenarios, Comparison Panel          |
+| 7   | Nour Mohammed       | 20241067 | Documentation, Input panel                                     |
 
 ---
 

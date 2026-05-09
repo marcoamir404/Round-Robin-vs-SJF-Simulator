@@ -53,7 +53,6 @@ public class ComparisonPanel extends JPanel {
 
         html.append("<b>🔹 Waiting & Response Time:</b><br>");
 
-        // 🔷 Waiting Time (3 algorithms)
         if (sjfPWT <= rrWT && sjfPWT <= sjfNPWT)
             html.append("&bull; <i>SJF Preemptive (SRTF)</i> achieved the <b>lowest average waiting time</b>.<br>");
         else if (sjfNPWT <= rrWT)
@@ -62,7 +61,6 @@ public class ComparisonPanel extends JPanel {
             html.append("&bull; <i>Round Robin</i> achieved the <b>lowest average waiting time</b>.<br>");
 
 
-        // 🔷 Response Time (3 algorithms)
         if (sjfPRT <= rrRT && sjfPRT <= sjfNPRT)
             html.append("&bull; <i>SJF Preemptive (SRTF)</i> provided the <b>fastest response</b> to new processes.<br>");
         else if (rrRT <= sjfNPRT)
@@ -71,9 +69,7 @@ public class ComparisonPanel extends JPanel {
             html.append("&bull; <i>SJF Non-Preemptive</i> showed slower response due to delayed execution.<br>");
 
 
-        // =========================
-        // 🔷 FAIRNESS (3 algorithms)
-        // =========================
+
         double rrSpread = maxWT(rr) - minWT(rr);
         double sjfNPSpread = maxWT(sjfNP) - minWT(sjfNP);
         double sjfPSpread = maxWT(sjfP) - minWT(sjfP);
@@ -89,9 +85,7 @@ public class ComparisonPanel extends JPanel {
         }
 
 
-        // =========================
-        // 🔷 QUANTUM
-        // =========================
+
         html.append("<br><b>⏱ Quantum Effect (Q=" + quantum + "):</b><br>");
 
         if (quantum <= 2) {
@@ -103,9 +97,7 @@ public class ComparisonPanel extends JPanel {
         }
 
 
-        // =========================
-        // 🔷 FINAL RESULT
-        // =========================
+
         String bestWT =
                 (sjfPWT <= rrWT && sjfPWT <= sjfNPWT) ? "SJF Preemptive"
                 : (sjfNPWT <= rrWT ? "SJF Non-Preemptive" : "Round Robin");

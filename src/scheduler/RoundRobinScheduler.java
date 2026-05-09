@@ -23,7 +23,6 @@ public class RoundRobinScheduler {
             index++;
         }
 
-        // 🔥 أول snapshot
         queueSnapshots.add(queueToList(queue));
         
         // 3lshan lw there is no process at time 0, we get the arrivalTime of first process
@@ -66,7 +65,6 @@ public class RoundRobinScheduler {
                 current.calculateMetrics();
             }
 
-            // 🔥 snapshot بعد update
             queueSnapshots.add(queueToList(queue));
 
             // 3lshan lw fe gap between current time and the next arriving process, its executes the process and update the current time
@@ -80,7 +78,6 @@ public class RoundRobinScheduler {
         return new RRResult(gantt, queueSnapshots);
     }
 
-    // 🔷 helper
     private static List<String> queueToList(Queue<Process> queue) {
         List<String> list = new ArrayList<>();
         for (Process p : queue) {
