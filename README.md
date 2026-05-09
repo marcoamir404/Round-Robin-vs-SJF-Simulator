@@ -253,8 +253,6 @@ The project includes multiple test scenarios:
 * No real-time context switching cost
 * No multi-core support
 * Ready Queue visualization is simplified
-* No preemptive SJF (SRTF) implementation
-
 ---
 
 ## 👥 Team Members
