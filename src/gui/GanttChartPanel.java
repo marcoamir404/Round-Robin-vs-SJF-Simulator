@@ -33,7 +33,7 @@ public class GanttChartPanel extends JPanel {
             new Color(192, 57, 43)     
     };
     private int colorIndex = 0;
-
+    
     public GanttChartPanel(String title) {
         setBackground(Color.WHITE);
         setLayout(null);

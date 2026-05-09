@@ -10,7 +10,6 @@ public class ReadyQueuePanel extends JPanel {
     private JPanel queueContainer;
     private final Color ACCENT_BLUE = new Color(52, 152, 219);
     private final Color SNAPSHOT_BG = new Color(248, 250, 252);
-    private final Color TEXT_DARK = new Color(44, 62, 80);
 
     public ReadyQueuePanel() {
         setLayout(new BorderLayout());
