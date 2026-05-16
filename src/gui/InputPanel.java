@@ -108,10 +108,10 @@ public class InputPanel extends JPanel {
         String[] columns = {"Process ID", "Arrival Time", "Burst Time"};
 
         model = new DefaultTableModel(columns, 0) {
-            @Override
+            /*@Override
             public boolean isCellEditable(int row, int column) {
                 return column != 0; 
-            }
+            }*/
         };
 
         table = new JTable(model);
